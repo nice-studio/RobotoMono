@@ -1,0 +1,22 @@
+{
+  "name": "Roboto-Mono",
+  "authors": [
+    "ProjectSoft <projectsoft2009@yandex.ru>"
+  ],
+  "description": "Font Family Roboto Mono",
+  "main": "style.css",
+  "keywords": [
+    "@fontface",
+    "Roboto Mono",
+    "Roboto-Mono"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

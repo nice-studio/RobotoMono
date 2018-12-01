@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru" prefix="og: http://ogp.me/ns#")
+	head
+		- var ttl = 'Roboto Mono';
+		- var git = 'RobotoMono';
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284c")
+		title Font Family: #{ttl}
+		base(href="https://nice-studio.github.io/" + git + "/")
+		link(rel="shortcut Icon" href="https://nice-studio.github.io/" + git + "/favicon.ico" type="image/x-icon")
+		link(rel="icon" href="https://nice-studio.github.io/" + git + "/favicon.ico" type="image/x-icon")
+		meta(name="robots" content="index, follow")
+		meta(name="title" content="Font Family: " + ttl)
+		meta(name="description" content="Font Family: " + ttl)
+		meta(name="keywords" content="" + ttl + "," + git)
+		meta(property="og:title" content="Font Family: " + ttl)
+		meta(property="og:description" content="Font Family: " + ttl)
+		style
+			include ../../test/css/main.css
+	body
+		h1 Font Family: #{ttl}
+		- var sizes = [100, 300, 400, 500, 700];
+		each val, index in sizes
+			p
+				|&nbsp; &nbsp; &nbsp; &nbsp; #{val} italic
+				br
+				span(class='italic-' + val)
+					include text
+			p
+				|&nbsp; &nbsp; &nbsp; &nbsp; #{val} normal
+				br
+				span(class='normal-' + val)
+					include text

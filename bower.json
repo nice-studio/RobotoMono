@@ -13,10 +13,15 @@
   "license": "MIT",
   "homepage": "",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"src/pug",
+		"Gruntfile.js",
+		"**/*.html",
+		"**/*.ico",
+		"**/*.json"
   ]
 }

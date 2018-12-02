@@ -4,7 +4,7 @@
     "ProjectSoft <projectsoft2009@yandex.ru>"
   ],
   "description": "Font Family Roboto Mono",
-  "main": "style.css",
+  "main": "dist/css/robotomono.css",
   "keywords": [
     "@fontface",
     "Roboto Mono",

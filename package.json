@@ -15,6 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/nice-studio/RobotoMono/issues"
 	},
+	"githubpage": "https://nice-studio.github.io/RobotoMono/",
 	"homepage": "https://github.com/nice-studio/RobotoMono#readme",
 	"devDependencies": {
 		"grunt": "^1.0.1",

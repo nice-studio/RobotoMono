@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 					compress: false,
 					ieCompat: false,
 					modifyVars: {
-						fontpath: '"dist/fonts"'
+						fontpath: '"<%= pkg.githubpage %>dist/fonts"'
 					},
 					plugins: [
 						new (require('less-plugin-lists'))
@@ -29,26 +29,26 @@ module.exports = function(grunt) {
 				files : {
 					'test/css/main.css' : [
 						'src/less/main.less'
-					],
-					'dist/css/<%= globalConfig.fn %>.css' : [
-						'src/less/fontface.less'
 					]
 				}
-			},/*
+			},
 			dist: {
 				options : {
 					compress: false,
 					ieCompat: false,
 					modifyVars: {
-						fontpath: "dist/fonts"
-					}
+						fontpath: '"dist/fonts"'
+					},
+					plugins: [
+						new (require('less-plugin-lists'))
+					],
 				},
 				files : {
 					'dist/css/<%= globalConfig.fn %>.css' : [
 						'src/less/fontface.less'
 					]
 				}
-			}*/
+			}
 		},
 		pug: {
 			files: {

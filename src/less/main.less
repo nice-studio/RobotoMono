@@ -3,5 +3,9 @@ body {
 	font-family: '@{fontfamily}';
 	font-size: 26px;
 }
-.mixweight(100; italic);
-.mixweight(100; normal);
+.for-each(@value in @list) {
+	.mixweight(@value, italic);
+}
+.for-each(@value in @list) {
+	.mixweight(@value, normal);
+}

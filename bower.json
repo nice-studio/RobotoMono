@@ -1,5 +1,5 @@
 {
-  "name": "Roboto-Mono",
+  "name": "roboto-mono",
   "authors": [
     "ProjectSoft <projectsoft2009@yandex.ru>"
   ],
@@ -13,15 +13,18 @@
   "license": "MIT",
   "homepage": "",
   "ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests",
-		"src/pug",
-		"Gruntfile.js",
-		"**/*.html",
-		"**/*.ico",
-		"**/*.json"
-  ]
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src/pug",
+    "Gruntfile.js",
+    "**/*.html",
+    "**/*.ico",
+    "**/*.json"
+  ],
+  "devDependencies": {
+    "fontname": "https://github.com/nice-studio/sceleton-webfont.git"
+  }
 }

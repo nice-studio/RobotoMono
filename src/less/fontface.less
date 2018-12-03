@@ -1,25 +1,13 @@
 @fontfamily: 'Roboto Mono';
 @fontfamilyos: 'RobotoMono';
 
-@import "mixin";
+@import "../../bower_components/fontname/src/less/mixin";
 
-// 100, 300, 400, 500, 700
-.face-italic-100();
-//.face-italic-200();
-.face-italic-300();
-.face-italic-400();
-.face-italic-500();
-//.face-italic-600();
-.face-italic-700();
-//.face-italic-800();
-//.face-italic-900();
+@list: 100, 300, 400, 500, 700;
 
-.face-100();
-//.face-200();
-.face-300();
-.face-400();
-.face-500();
-//.face-600();
-.face-700();
-//.face-800();
-//.face-900();
+.for-each(@value in @list) {
+	.face-italic(@value);
+}
+.for-each(@value in @list) {
+	.face(@value);
+}

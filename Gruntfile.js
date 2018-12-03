@@ -21,7 +21,10 @@ module.exports = function(grunt) {
 					ieCompat: false,
 					modifyVars: {
 						fontpath: '"dist/fonts"'
-					}
+					},
+					plugins: [
+						new (require('less-plugin-lists'))
+					],
 				},
 				files : {
 					'test/css/main.css' : [
